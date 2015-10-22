@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "bash deps.sh",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/beeva-marianmoldovan/resin-sense/issues"
   },
-  "homepage": "https://github.com/beeva-marianmoldovan/resin-sense#readme"
+  "homepage": "https://github.com/beeva-marianmoldovan/resin-sense#readme",
+  "dependencies": {
+    "async": "^1.4.2",
+    "lodash": "^3.10.1",
+    "node-blink1": "^0.2.2",
+    "sensortag": "^1.2.0"
+  }
 }
